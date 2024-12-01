@@ -163,7 +163,7 @@ else{
 }
 console.log(century);
 
-*/
+
 
 //TYPE Conversiion and Type Coercion
 
@@ -189,4 +189,86 @@ let n = '1' + 1; // 11
 n = n-1; //10
 console.log(n);
 
+
 //problem above is concatenated so number is 11, 11 -1 makes n =10
+
+//Truthy and Falsy Values
+
+//Falsy values are values that aren't exactly false but can become false, 
+//5 falsy values: 0,'', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Darryl'));
+console.log(Boolean({}));
+
+const money = 10;
+if(money) { //since money is 0 it is automatically converted to false boolean
+    console.log("Don't spend it all ;)");
+}else{
+    console.log('You should get a job!')
+}
+
+let height = 123;
+if(height){
+    console.log('YAY height is defined');
+}
+else{
+    console.log('Height is UNDEFINED')
+}
+
+
+
+//Equality Operators
+
+const age  = 18;
+if(age === 18) console.log('You just became an adult!(Strict)'); //Triple equal is strict equality operator
+
+if (age == 18) console.log("You just became an adult!(loose)"); // coercion for == string converts to number
+
+const favourite = Number(prompt("Whats your favourite number?")); 
+
+console.log(favourite);
+console.log(typeof favourite);
+
+if(favourite === 23){ // '23' == 23 TRUE
+    console.log('Cool! 23 is an amazing number!')
+}else if(favourite === 7){
+    console.log("7 is also an amazing number!");
+}else{
+    console.log('23 or 7 is not selected')
+}
+
+if(favourite !== 23) console.log('Why not 23?'); // different operator, strict version double = 
+*/
+
+//BOOLEAN LOGIC: THE AND, OR & NOT Operators
+
+//AND operator = true if all variables are true
+//OR operator = true if one of variable is true
+//Not operator = acts on one boolean value, inverts true or false
+
+const hasDriversLicense = true; //A
+const hasGoodVision = true; //B
+
+console.log(hasDriversLicense && hasGoodVision)
+console.log(hasDriversLicense || hasGoodVision)
+console.log(!hasDriversLicense)
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if(shouldDrive){
+//     console.log('Sarah is able to drive!')
+// }else {
+//     console.log('Someone else should drive...')
+// }
+
+const isTired = false; //
+console.log(hasDriversLicense && hasGoodVision && isTired);
+const shouldDrive = hasDriversLicense && hasGoodVision && !isTired; //tired is inverted which makes this false has to change
+
+if (shouldDrive) {
+  console.log("Sarah is able to drive!");
+} else {
+  console.log("Someone else should drive...");
+}
