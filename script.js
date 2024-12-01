@@ -135,7 +135,7 @@ console.log(`String
     multiple
     lines`);
 
-    */
+    
 
     //IF ELSE Statements
 
@@ -162,3 +162,13 @@ else{
     century = 21;
 }
 console.log(century);
+
+*/
+
+//TYPE Conversiion and Type Coercion
+
+//Type conversion want to convert from one type to another
+
+const inputYear = '1999';
+console/log(Number(inputYear)); //converts string to numbers
+console.log(inputYear + 18); //if we wanted to add something to the string that has a number
