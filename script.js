@@ -169,6 +169,24 @@ console.log(century);
 
 //Type conversion want to convert from one type to another
 
+//type conversion
 const inputYear = '1999';
-console/log(Number(inputYear)); //converts string to numbers
-console.log(inputYear + 18); //if we wanted to add something to the string that has a number
+console.log(Number(inputYear), inputYear); //converts string to numbers
+console.log(Number(inputYear) + 18); //if we wanted to add something to the string that has a number
+
+console.log(Number('Darryl'));
+console.log(typeof NAN);
+
+console.log(String(23), 23); //Colored is a number, string is non colored
+
+//type coercion, javascript does it behind the scenes
+console.log('I am ' + 23 + ' years old')
+console.log('23' - '10' - '3'); // converts into  integer number due to operator sign
+console.log("23" + "10" + 3); // These are concatenated can be confusing
+console.log('23' * '2'); // Converted into numbers
+
+let n = '1' + 1; // 11
+n = n-1; //10
+console.log(n);
+
+//problem above is concatenated so number is 11, 11 -1 makes n =10
