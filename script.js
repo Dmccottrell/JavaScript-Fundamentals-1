@@ -240,8 +240,7 @@ if(favourite === 23){ // '23' == 23 TRUE
 }
 
 if(favourite !== 23) console.log('Why not 23?'); // different operator, strict version double = 
-*/
-
+*
 //BOOLEAN LOGIC: THE AND, OR & NOT Operators
 
 //AND operator = true if all variables are true
@@ -272,3 +271,76 @@ if (shouldDrive) {
 } else {
   console.log("Someone else should drive...");
 }
+
+
+
+//Switch Statements
+
+const day = 'thursday';
+
+switch(day){
+    case 'monday': // day === 'monday' strict comparison compared to else if
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code examples');
+        break;
+    case 'friday':
+        console.log('Record Videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend');
+        break;
+    default:
+        console.log('Not a valid day');
+}
+
+    // if else example of switch statement above
+    if(day === 'monday'){
+        console.log('Plan course Structure');
+        console.log('Go to coding meetup');
+    }
+    else if(day === 'tuesday'){
+        console.log('Prepare theory videos');
+    }
+    else if(day === 'wednesday' || day === 'thursday'){
+        console.log('Write code examples');
+    }
+    else if(day === 'friday'){
+        console.log('Record Videos')
+    }
+    else if(day === 'saturday' || day === 'sunday'){
+        console.log('Enjoy the weekend');
+    }
+        */
+
+    //Conditional Operator
+    //allows us to write something similar to if-else statement in one line
+
+    const age = 23;
+    age >=18 ? console.log('I like to drine wine') :
+    console.log('I like to drink water');
+
+    // has 3 parts the condition, the if and the else
+
+   const drink = age >=18 ? 'wine' : 'water';
+   console.log(drink);
+
+   //simplified version above
+    // if else version below
+   let drink2;
+   if(age >= 18){
+    drink2 = 'wine';
+   }
+   else{
+    drink2 = 'water';
+   }
+   console.log(drink2)
+
+   console.log(`I like to drink ${  age >=18 ? 'wine' : 'water'}`)

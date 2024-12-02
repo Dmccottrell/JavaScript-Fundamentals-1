@@ -161,3 +161,33 @@ if (language === 'English' && population < 390 && !hasAnIsland) {
 } else {
   console.log(`${myCountry} does not me your criteria`);
 }
+
+
+//Switch Statements
+
+switch(language){
+  case 'chinese':
+  case 'mandarin':
+    console.log('Most number of native speakers!');
+    break;
+  case 'spanish':
+    console.log('2nd place in number of native speakers');
+    break;
+  case 'english':
+    console.log('3rd place');
+    break;
+  case 'hindi':
+    console.log('Number 4');
+    break;
+  case 'arabic':
+    console.log('5th most spoken language');
+    break;
+  default:
+    console.log('Great language too :)')
+    
+}
+
+//Conditional(Ternary) Operator
+
+myCountryPopulation >= 33 ? console.log(`${myCountry}'s population is above average`) :
+console.log(`${myCountry}'s population is below average`)
